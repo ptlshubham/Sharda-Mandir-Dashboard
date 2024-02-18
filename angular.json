@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sharda-mandir-dashboard": {
+    "shree-sharda-mandir-kedavani-manadal-dashboard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sharda-mandir-dashboard",
+            "outputPath": "dist/shree-sharda-mandir-kedavani-manadal-dashboard",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -106,10 +106,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sharda-mandir-dashboard:build:production"
+              "buildTarget": "shree-sharda-mandir-kedavani-manadal-dashboard:build:production"
             },
             "development": {
-              "buildTarget": "sharda-mandir-dashboard:build:development"
+              "buildTarget": "shree-sharda-mandir-kedavani-manadal-dashboard:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -117,7 +117,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "sharda-mandir-dashboard:build"
+            "buildTarget": "shree-sharda-mandir-kedavani-manadal-dashboard:build"
           }
         },
         "test": {
