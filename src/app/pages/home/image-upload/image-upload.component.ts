@@ -134,7 +134,7 @@ export class ImageUploadComponent implements OnInit {
     img.onload = () => {
       if (this.imageModel.purpose == 'slider') {
         debugger
-        if (img.width === 1902 && img.height === 502) {
+        if (img.width === 1920 && img.height === 710) {
           if (event.target.files && event.target.files[0]) {
             reader.readAsDataURL(file);
             reader.onload = () => {

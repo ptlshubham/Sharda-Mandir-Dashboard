@@ -21,6 +21,7 @@ export class UserProfileService {
     }
 
     userLogin(email: any, pass: any, id: any) {
+        debugger
         let data = {
             email: email,
             pass: pass,
