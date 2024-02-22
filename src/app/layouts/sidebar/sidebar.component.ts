@@ -32,10 +32,10 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     // this.menuItems = MENU;
-    if (localStorage.getItem('InstituteURL') == 'www.cesociety.in' && localStorage.getItem('Role') == 'Institute') {
+    if (localStorage.getItem('InstituteURL') == 'www.shreeshardakedavanimandal.ac.in' && localStorage.getItem('Role') == 'Institute') {
       this.menuItems = CES;
     }
-    else if (localStorage.getItem('InstituteURL') != 'www.cesociety.in' && localStorage.getItem('Role') == 'Institute') {
+    else if (localStorage.getItem('InstituteURL') != 'www.shreeshardakedavanimandal.ac.in' && localStorage.getItem('Role') == 'Institute') {
       this.menuItems = MENU;
     }
     else if (localStorage.getItem('Role') == 'superAdmin') {

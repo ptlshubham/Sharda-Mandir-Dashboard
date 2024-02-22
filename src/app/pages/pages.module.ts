@@ -15,7 +15,7 @@ import { WidgetModule } from '../shared/widget/widget.module';
 
 
 import { PagesRoutingModule } from './pages-routing.module';
-
+import { NgChartsModule } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
@@ -33,6 +33,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RouterModule,
     NgbDropdownModule,
     NgbNavModule,
+    NgChartsModule,
+
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

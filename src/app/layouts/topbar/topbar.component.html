@@ -37,12 +37,7 @@
         </div>
 
         <div class="d-flex">
-            <div class="dropdown d-none d-sm-inline-block">
-                <button type="button" class="btn header-item btn-primary waves-effect waves-light"><a
-                        href="https://{{InstituteURL}}" target="_blank" style="color: white;"><i
-                            class="mdi mdi-eye-settings-outline align-middle"></i> View Site</a></button>
-            </div>
-            <div class="dropdown d-none d-sm-inline-block">
+            <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item" id="mode-setting-btn">
                     <ng-container *ngIf="layoutMode == 'light'">
                         <i-feather name="moon" class="icon-lg" (click)="changeMode('dark')"></i-feather>
