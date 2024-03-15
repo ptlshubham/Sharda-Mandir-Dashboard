@@ -108,7 +108,7 @@ export class CommiteeComponent implements OnInit {
       this.commImages = null;
       this.commiModel.commMultiImage=[];
       this.commMultiImage=[];
-      this.toastr.success('Infrastructure Details added Successfully.', 'Saved', { timeOut: 3000, });
+      this.toastr.success('Committe Details added Successfully.', 'Saved', { timeOut: 3000, });
       this.isUpdate = false;
       this.isOpen = false;
       this.getCommeteeDataById();
@@ -193,7 +193,7 @@ export class CommiteeComponent implements OnInit {
     }
     this.homeService.updateCommiteeDetails(this.commiModel).subscribe((res: any) => {
       this.commiData = res;
-      this.toastr.success('Infrastructure Details Updated Successfully.', 'Updated', { timeOut: 3000, });
+      this.toastr.success('Committe Details Updated Successfully.', 'Updated', { timeOut: 3000, });
       this.getCommeteeDataById();
       this.isOpen = false;
       this.isUpdate = false;
@@ -202,7 +202,7 @@ export class CommiteeComponent implements OnInit {
   removeCommiteeById(id: any) {
     this.homeService.removeCommiteeById(id).subscribe((res: any) => {
       this.commiData = res;
-      this.toastr.success('Infrastructure Details deleted Successfully.', 'Removed', { timeOut: 3000, });
+      this.toastr.success('Committe Details deleted Successfully.', 'Removed', { timeOut: 3000, });
       this.getCommeteeDataById();
     })
   }

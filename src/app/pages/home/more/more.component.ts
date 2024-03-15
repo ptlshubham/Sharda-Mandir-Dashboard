@@ -46,7 +46,7 @@ export class MoreComponent implements OnInit {
         const image = new Image();
         image.src = reader.result as string;
         image.onload = () => {
-          if (image.width === 500 && image.height === 500) {
+          if (image.width === 1280 && image.height === 720) {
             this.imageUrl = reader.result;
             const imgBase64Path = reader.result;
             this.cardImageBase64 = imgBase64Path;
